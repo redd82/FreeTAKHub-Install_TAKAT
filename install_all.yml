@@ -2,7 +2,7 @@
 - name: Install FreeTAKServer and all components
   hosts: all
   become: true
-  become_user: root
+  become_user: ftsuser
   roles:
     - freetakserver
     - freetakserver_ui
