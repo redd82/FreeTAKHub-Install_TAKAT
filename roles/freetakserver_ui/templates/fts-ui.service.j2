@@ -10,6 +10,8 @@ RestartSec=1
 StandardOutput=append:/var/log/{{ fts_ui_service_name }}/{{ fts_ui_service_name }}-stdout.log
 StandardError=append:/var/log/{{ fts_ui_service_name }}/{{ fts_ui_service_name }}-stderr.log
 ExecStart={{ fts_venv }}/bin/python3 {{ fts_ui_install_path }}/run.py
+User=ftsuser
+Group=users
 
 [Install]
 WantedBy=multi-user.target
