@@ -1,6 +1,6 @@
 #!/bin/bash
 echo $1
-fts_remote=https://github.com/FreeTAKTeam/FreeTakServer.git
+fts_remote=https://github.com/redd82/FreeTakServer_TAKAT.git
 fts_path=$HOME/FreeTakServer
 branch="v2.0.17b0"
 pushd $HOME
