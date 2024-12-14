@@ -10,8 +10,8 @@
     name: "{{ fts_apt_dependencies | list }}"
 
 - name: "Install {{ fts_pip_package_name }} from github repo"
- shell: "{{ item }}"
- loop:
+  shell: "{{ item }}"
+  loop:
    - "git clone https://github.com/redd82/FreeTakServer_TAKAT.git /FreeTakServer"
    - "git -C /FreeTakServer reset --hard 109b674"
    - "pip install /FreeTakServer"
