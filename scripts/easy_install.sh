@@ -18,7 +18,7 @@ NEEDRESTART=
 # trap or catch signals and direct execution to cleanup
 trap cleanup SIGINT SIGTERM ERR EXIT
 
-DEFAULT_REPO="https://github.com/FreeTAKTeam/FreeTAKHub-Installation.git"
+DEFAULT_REPO="https://github.com/redd82/FreeTAKHub-Install_TAKAT.git"
 REPO=${REPO:-$DEFAULT_REPO}
 DEFAULT_BRANCH="main"
 BRANCH=${BRANCH:-$DEFAULT_BRANCH}

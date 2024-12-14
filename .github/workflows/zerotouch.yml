@@ -86,14 +86,14 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i private_key \
             root@$DROPLET_IP "bash -s" <<- 'ENDSSH'
-            git clone https://github.com/FreeTAKTeam/FreeTAKHub-Installation.git
+            git clone https://github.com/redd82/FreeTAKHub-Install_TAKAT.git
           ENDSSH
       - name: Checkout the git repository (Development Branches)
         if: github.ref != 'refs/heads/main'
         run: |
           ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i private_key \
             root@$DROPLET_IP "bash -s" <<- 'ENDSSH'
-            git clone https://github.com/FreeTAKTeam/FreeTAKHub-Installation.git
+            git clone https://github.com/redd82/FreeTAKHub-Install_TAKAT.git
             cd ~/FreeTAKHub-Installation
             git checkout ${{ env.BRANCH_NAME }}
           ENDSSH

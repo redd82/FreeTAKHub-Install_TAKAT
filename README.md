@@ -10,7 +10,7 @@ Please refer to the [official documentation ](https://freetakteam.github.io/Free
 Clone the origin repository.
 The following is the official repository.
 ```bash
-git clone --origin upstream https://github.com/FreeTAKTeam/FreeTAKHub-Installation.git ${HOME}/fth-install
+git clone --origin upstream https://github.com/redd82/FreeTAKHub-Install_TAKAT.git ${HOME}/fth-install
 ```
 
 You will want to commit your work into a fork of the repository.

@@ -9,7 +9,7 @@ set -o pipefail
 # trap or catch signals and direct execution to cleanup
 trap cleanup SIGINT SIGTERM ERR EXIT
 
-REPO="https://github.com/FreeTAKTeam/FreeTAKHub-Installation.git"
+REPO="https://github.com/redd82/FreeTAKHub-Install_TAKAT.git"
 
 ###############################################################################
 # Print out helpful message.
@@ -202,7 +202,7 @@ function do_checks() {
   fi
 
   if [[ -n "${TEST-}" ]]; then
-      REPO="https://github.com/FreeTAKTeam/FreeTAKHub-Installation.git"
+      REPO="https://github.com/redd82/FreeTAKHub-Install_TAKAT.git"
   fi
 
 }
