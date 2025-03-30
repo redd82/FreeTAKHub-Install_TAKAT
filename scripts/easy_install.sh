@@ -525,6 +525,7 @@ function install_python_environment() {
   python3 -m pip install --force-reinstall jinja2
   python3 -m pip install --force-reinstall pyyaml
   python3 -m pip install --force-reinstall psutil
+  python3 -m pip install --force-reinstall connexion
 
   deactivate
 
